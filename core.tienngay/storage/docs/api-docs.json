@@ -1,0 +1,569 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API V2 Tienngay",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "/var/www/core.tienngay/modules/ApiCpanel/Http/Controllers"
+        }
+    ],
+    "paths": {
+        "/api/save_customer_info": {
+            "post": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "save_customer_info",
+                "operationId": "030ec72d71781c2b6b621c2607e054f0",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "interest": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object",
+                                "example": {
+                                    "interest": "1.5"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/interest/create_interest_general": {
+            "post": {
+                "tags": [
+                    "interest"
+                ],
+                "summary": "create",
+                "operationId": "269fe07c9ecd64041cce4b8ee7033ac3",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "interest": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object",
+                                "example": {
+                                    "interest": "1.5"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/api/property_/import": {
+            "post": {
+                "tags": [
+                    "interest"
+                ],
+                "summary": "property_/inport",
+                "operationId": "839e0ae3e7f9f1b2b61b040eec4e870f",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "property_type": {
+                                        "type": "int"
+                                    },
+                                    "file": {
+                                        "type": "file"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/api/property/delete": {
+            "post": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "property_type/delete",
+                "operationId": "da71b6f09855bcfdd7db504f46c6d4f9",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "id": {
+                                        "type": "int"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/api/property/delete_multiple": {
+            "post": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "property_type/delete_multiple",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "ids": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/api/property/info": {
+            "post": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "property_type/info",
+                "operationId": "3831c28c166a15660c1e1c8096bf15d0",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "id": {
+                                        "type": "int"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/api/property_depreciation/import": {
+            "post": {
+                "tags": [
+                    "interest"
+                ],
+                "summary": "property_depreciation/inport",
+                "operationId": "3540c072e1a282fe450bbc352e45ed80",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "property_type": {
+                                        "type": "int"
+                                    },
+                                    "file": {
+                                        "type": "file"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/api/property_edited_history/all": {
+            "post": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "property_edited_history/all",
+                "operationId": "1c6c72029fd7f851197b7538f76b321e",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/api/property_edited_history/search": {
+            "post": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "property_edited_history/search",
+                "operationId": "e7ab858d9b2a560065120064c3918619",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "property_model": {
+                                        "type": "string"
+                                    },
+                                    "property_depreciation_id": {
+                                        "type": "int"
+                                    },
+                                    "property_id": {
+                                        "type": "int"
+                                    },
+                                    "is_edit_depreciation": {
+                                        "type": "int"
+                                    },
+                                    "status": {
+                                        "type": "int"
+                                    },
+                                    "created_by": {
+                                        "type": "string"
+                                    },
+                                    "updated_by": {
+                                        "type": "string"
+                                    },
+                                    "created_at": {
+                                        "type": "date"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/api/property_edited_history/create_or_update": {
+            "post": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "property_edited_history/create_or_update",
+                "operationId": "92c95ca210a241be405646efe5318249",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "property_model": {
+                                        "type": "string"
+                                    },
+                                    "property_depreciation_id": {
+                                        "type": "int"
+                                    },
+                                    "property_id": {
+                                        "type": "int"
+                                    },
+                                    "current_value": {
+                                        "type": "string"
+                                    },
+                                    "new_value": {
+                                        "type": "string"
+                                    },
+                                    "is_edit_depreciation": {
+                                        "type": "int"
+                                    },
+                                    "status": {
+                                        "type": "int"
+                                    },
+                                    "created_by": {
+                                        "type": "string"
+                                    },
+                                    "updated_by": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/api/property_edited_history/update_status": {
+            "post": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "property_edited_history/update_status",
+                "operationId": "454788fe3ada33d71d4853b023a8e8c6",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "id": {
+                                        "type": "int"
+                                    },
+                                    "updated_by": {
+                                        "type": "string"
+                                    },
+                                    "status": {
+                                        "type": "int"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/api/property_type/all": {
+            "post": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "property_type/all",
+                "operationId": "29522f2f339078e7a604fcb1d8afe5ed",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/api/property_type": {
+            "post": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "property_type",
+                "operationId": "f7053f371d12119a0cc32879492745d1",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "id": {
+                                        "type": "int"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/api/property_type/create_or_update": {
+            "post": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "property_type/create_or_update",
+                "operationId": "68104939c56de08766b576b77fca4e4c",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "id": {
+                                        "type": "int"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "code": {
+                                        "type": "string"
+                                    },
+                                    "enable": {
+                                        "type": "int"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/api/property_type/delete/{id}": {
+            "post": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "property_type/delete/{id}",
+                "operationId": "1fffbf74dc5716662f2c14d75ba0f26a",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "id": {
+                                        "type": "int"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}

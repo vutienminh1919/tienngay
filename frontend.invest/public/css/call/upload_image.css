@@ -1,0 +1,65 @@
+.img_anh_chan_dung {
+    position: relative;
+}
+
+.img_anh_chan_dung .loading_img_anh_chan_dung {
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.img_anh_chan_dung .loading_img_anh_chan_dung i.fa {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+}
+
+.img_cmt_mat_truoc {
+    position: relative;
+}
+
+.img_cmt_mat_truoc .loading_img_cmt_mat_truoc {
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.img_cmt_mat_truoc .loading_img_cmt_mat_truoc i.fa {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+}
+
+.img_cmt_mat_sau {
+    position: relative;
+}
+
+.img_cmt_mat_sau .loading_img_cmt_mat_sau {
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.img_cmt_mat_sau .loading_img_cmt_mat_sau i.fa {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+}

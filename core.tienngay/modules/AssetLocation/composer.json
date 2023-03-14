@@ -1,0 +1,26 @@
+{
+    "name": "tienngay/asset-location",
+    "minimum-stability": "dev",
+    "description": "",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\AssetLocation\\Providers\\AssetLocationServiceProvider",
+                "Modules\\AssetLocation\\Providers\\ScheduleServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\AssetLocation\\": ""
+        },
+        "files": [
+            "Helper/helper.php"
+        ]
+    },
+    "require": {
+        "simplesoftwareio/simple-qrcode": "~4"
+    }
+}

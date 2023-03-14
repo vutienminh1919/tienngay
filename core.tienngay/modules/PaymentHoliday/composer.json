@@ -1,0 +1,29 @@
+{
+    "name": "tienngay/paymentholiday",
+    "minimum-stability": "dev",
+    "description": "",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\PaymentHoliday\\Providers\\PaymentHolidayServiceProvider",
+                "Modules\\PaymentHoliday\\Providers\\ScheduleServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\PaymentHoliday\\": ""
+        }
+    },
+    "require": {
+        "tienngay/mongodb-core": "dev-master",
+        "tienngay/mysql-core": "dev-master",
+        "maatwebsite/excel": "^3.1",
+        "zircote/swagger-php": "^3.2",
+        "rap2hpoutre/laravel-log-viewer": "^1.7",
+        "phpoffice/phpspreadsheet": "^1.2"
+    }
+}

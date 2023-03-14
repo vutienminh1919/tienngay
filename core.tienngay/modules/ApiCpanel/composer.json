@@ -1,0 +1,25 @@
+{
+    "name": "tienngay/api-cpanel",
+    "minimum-stability": "dev",
+    "description": "",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ApiCpanel\\Providers\\ApiCpanelServiceProvider",
+                "Modules\\ApiCpanel\\Providers\\ScheduleServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\ApiCpanel\\": ""
+        }
+    },
+    "require": {
+        "zircote/swagger-php": "^3.2",
+        "maatwebsite/excel": "^3.1"
+    }
+}

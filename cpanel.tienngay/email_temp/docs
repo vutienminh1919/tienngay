@@ -1,0 +1,81 @@
+vfc_send_storeman:
+customer_name  // Tên Khách hàng
+code_contract // Mã hồ sơ
+product  // San Pham
+product_detail // Chi tiet san pham
+full_name // ten day du nguoi nhan mail
+///
+vfc_send_president:
+customer_name
+code_contract
+store_name // Phong giao dich
+amount_money // So tien vay
+product
+product_detail
+number_day_loan // so ngay vay
+//
+vfc_president_not_approve
+customer_name
+code_contract
+store_name
+amount_money
+product
+product_detail
+note
+//
+vfc_send_president_add
+full_name
+customer_name
+code_contract
+store_name
+amount_money
+product
+product_detail
+number_day_loan
+note
+//
+vfc_president_approved_send_gdv
+full_name
+customer_name
+code_contract
+store_name
+amount_money
+product
+product_detail
+number_day_loan
+note
+//
+vfc_president_aproved_send_custome
+customer_name
+code_contract
+amount_money
+number_day_loan
+7 //
+vfc_cancel_send_gdv
+note
+product
+product_detail
+customer_name
+store_name
+customer_name
+code_contract
+full_name
+8 //
+vfc_cancel_send_customer
+customer_name
+9// vfc_accounting_approved
+full_name
+customer_name
+code_contract
+product
+product_detail
+note
+10 //vfc_send_accounting
+full_name
+customer_name
+code_contract
+product
+product_detail
+amount_money
+number_day_loan
+note

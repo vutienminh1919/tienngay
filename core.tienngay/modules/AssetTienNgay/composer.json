@@ -1,0 +1,27 @@
+{
+    "name": "tienngay/asset-tienngay",
+    "minimum-stability": "dev",
+    "description": "",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\AssetTienNgay\\Providers\\AssetTienNgayServiceProvider",
+                "Modules\\AssetTienNgay\\Providers\\ScheduleServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\AssetTienNgay\\": ""
+        },
+        "files": [
+            "Helper/helper.php"
+        ]
+    },
+    "require": {
+        "zircote/swagger-php": "^3.2",
+        "simplesoftwareio/simple-qrcode": "~4"
+    }
+}

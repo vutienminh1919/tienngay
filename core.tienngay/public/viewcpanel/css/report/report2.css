@@ -1,0 +1,75 @@
+.detail-report{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    width: 100%;
+    background-color: #E5E5E5;
+}
+.detail-report h3{
+    padding-left: 3%;
+}
+.detail{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-left: 2%;
+    font-size: 13px;
+}
+.ditail-button{
+    padding-right: 2%;
+}
+.detail-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-detail{
+  width: 100%;
+}
+.form-detail-left{
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-detail-right{
+    width: 50%;
+    float: right;
+    padding:0% 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-detail1{
+    padding: 2% 0% ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.boder1{
+    border-bottom: 1px solid #E8E8E8;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.modal-body p{
+    padding-left: 30%;
+}
+h4{
+    color: #115C26 ;
+    font-size: 20px;
+    line-height: 24px;
+}
+.cl-btn{
+    background-color: #4aa564;
+}
+span{
+    color:  red;
+}

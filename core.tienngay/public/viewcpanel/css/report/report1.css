@@ -1,0 +1,50 @@
+.create_report{
+    /* padding: 0% 5%; */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    padding-left: 2%;
+}
+.create_report h4{
+    color:  #115C26;;
+}
+.new_report{
+    width: 100%;
+    background-color: #ffffff;
+}
+.report_left{
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+
+}
+.report_right{
+    width: 50%;
+    float: right;
+    padding: 2% 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+}
+.modal1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.modal1 select{
+    width: 190px;
+    height: 30px;
+}
+.modal1 p{
+    padding-left: 40%;
+}
+.modal1 .form-floating{
+    width: 190px;
+}
+span{
+    color: red;
+}

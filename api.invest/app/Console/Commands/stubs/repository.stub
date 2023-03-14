@@ -1,0 +1,12 @@
+<?php
+namespace App\Repository;
+
+class TestRepository extends BaseRepository implements TestRepositoryInterface
+{
+
+	public function getModel()
+	{
+		return \App\Models\Test::class;
+	}
+
+}

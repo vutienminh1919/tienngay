@@ -1,0 +1,26 @@
+{
+    "name": "tienngay/ctv-tienngay",
+    "minimum-stability": "dev",
+    "description": "",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\CtvTienNgay\\Providers\\CtvTienNgayServiceProvider",
+                "Modules\\CtvTienNgay\\Providers\\ScheduleServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\CtvTienNgay\\": ""
+        }
+    },
+    "require": {
+        "tienngay/mongodb-core": "dev-master",
+        "tienngay/mysql-core": "dev-master",
+        "zircote/swagger-php": "^3.2"
+    }
+}

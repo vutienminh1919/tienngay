@@ -1,0 +1,24 @@
+{
+    "name": "tienngay/mongodb-core",
+    "minimum-stability": "dev",
+    "description": "",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jenssegers\\Mongodb\\MongodbServiceProvider",
+                "Modules\\MongodbCore\\Providers\\MongodbCoreServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\MongodbCore\\": ""
+        }
+    },
+    "require": {
+        "jenssegers/mongodb": "^3.7.3"
+    }
+}

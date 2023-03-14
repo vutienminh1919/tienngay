@@ -1,0 +1,22 @@
+{
+    "name": "tienngay/mysql-core",
+    "minimum-stability": "dev",
+    "description": "",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\MysqlCore\\Providers\\MysqlCoreServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\MysqlCore\\": ""
+        }
+    },
+    "require": {
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Nhà đầu tư",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "/var/www/core.tienngay/modules/ApiCpanel/Http/Controllers"
+        }
+    ],
+    "paths": {
+        "/interest/create_interest_general": {
+            "post": {
+                "tags": [
+                    "interest"
+                ],
+                "summary": "create",
+                "operationId": "269fe07c9ecd64041cce4b8ee7033ac3",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "interest": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object",
+                                "example": {
+                                    "interest": "1.5"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}

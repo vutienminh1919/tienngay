@@ -1,0 +1,25 @@
+{
+    "name": "tienngay/homedy",
+    "minimum-stability": "dev",
+    "description": "",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Homedy\\Providers\\HomedyServiceProvider",
+                "Modules\\Homedy\\Providers\\ScheduleServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\Homedy\\": ""
+        }
+    },
+    "require": {
+        "tienngay/mongodb-core": "dev-master",
+        "tienngay/mysql-core": "dev-master"
+    }
+}

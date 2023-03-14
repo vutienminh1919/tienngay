@@ -1,0 +1,105 @@
+.report{
+    background-color: #E5E5E5;
+    font-family: 'Roboto';
+    font-weight: 600;
+    width: 100%;
+}
+.ds_report{
+    background-color: #ffffff;
+    padding-bottom: 5%;
+}
+.report_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-radius: 5%;
+
+}
+.table{
+    position: relative;
+}
+.report_footer{
+    /* width: 100%; */
+    min-width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: -20px;
+    background-color: #ffffff;
+}
+.report_footer1 p{
+   padding: 2% 10%;
+}
+.pagination{
+    padding: 3% 10%;
+}
+/* Set the style for the a tag */
+.pagination a {
+    color: black;
+    float: left;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a:hover:not(.active) {
+    background-color:#115C26;;
+    color: #ffffff;
+}
+
+.bx-plus{
+    color: #ffffff;
+    font-size: 28px;
+}
+thead{
+    background: #F0F0F0;
+    text-align: center;
+}
+h4{
+    color:  #115C26;;
+}
+i{
+    padding-left: 4px;
+}
+.more{
+    min-width: 100px;
+}
+
+.more1{
+    text-align: center;
+}
+td{
+    vertical-align: middle;
+}
+th{
+    vertical-align: middle;
+}
+table{
+    text-align: center;
+    display: block;
+    white-space: nowrap;
+    overflow-x: visible;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow-y: visible;
+}
+@media only screen and (min-width: 64em){
+    table{
+        border: none;
+        text-align: center;
+        display: block;
+        white-space: nowrap;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-bottom: 0;
+        overflow-y: hidden;
+    }
+    .more{
+        min-width: 100px;
+    }
+    .more2{
+        min-width: 171px;
+    }
+    .more3{
+        min-width: 120px;
+    }
+}

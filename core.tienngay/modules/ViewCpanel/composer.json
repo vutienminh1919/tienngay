@@ -1,0 +1,24 @@
+{
+    "name": "tienngay/view-cpanel",
+    "minimum-stability": "dev",
+    "description": "",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ViewCpanel\\Providers\\ViewCpanelServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\ViewCpanel\\": ""
+        }
+    },
+    "require": {
+        "tienngay/mongodb-core": "dev-master",
+        "tienngay/mysql-core": "dev-master"
+    }
+}

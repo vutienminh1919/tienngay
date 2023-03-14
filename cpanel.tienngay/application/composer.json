@@ -1,0 +1,11 @@
+{
+    "require": {
+        "mongodb/mongodb": "^1.2",
+        "workerman/phpsocket.io": "^1.1",
+        "wisembly/elephant.io": "^3.3",
+        "braintree/braintree_php" : "3.36.0",
+        "paypal/rest-api-sdk-php": "*",
+        "phpoffice/phpspreadsheet": "^1.2",
+      "ext-json": "*"
+    }
+}

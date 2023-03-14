@@ -1,0 +1,29 @@
+{
+    "name": "tienngay/mailer",
+    "minimum-stability": "dev",
+    "description": "",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Mailer\\Providers\\MailerServiceProvider",
+                "Modules\\Mailer\\Providers\\ScheduleServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\Mailer\\": ""
+        }
+    },
+    "require": {
+        "tienngay/mongodb-core": "dev-master",
+        "tienngay/mysql-core": "dev-master",
+        "maatwebsite/excel": "^3.1",
+        "zircote/swagger-php": "^3.2",
+        "rap2hpoutre/laravel-log-viewer": "^1.7",
+        "phpoffice/phpspreadsheet": "^1.2"
+    }
+}
